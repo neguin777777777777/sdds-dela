@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Cores */
+        :root {
+            --azul-cientifico: #2C3E50;
+            --verde-quimico: #1ABC9C;
+            --cinza-claro: #ECF0F1;
+            --branco-neutro: #FFFFFF;
+            --laranja-sutil: #E67E22;
+            --cinza-escuro: #34495E;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cinza-claro);
+            color: var(--cinza-escuro);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: var(--azul-cientifico);
+            color: var(--branco-neutro);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .logo i {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: var(--branco-neutro);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: var(--verde-quimico);
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-box {
+            width: 200px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .mode-icon {
+            cursor: pointer;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: var(--branco-neutro);
+            margin-left: 15px;
+        }
+
+        /* Animação de zoom na imagem */
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.05); /* Efeito de zoom */
+        }
+        .image-container .text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 32px;
+            font-weight: bold;
+            width: 80%;
+            animation: typing 3s steps(30) 1; /* Animação de digitação */
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 80%; }
+        }
+
+        .intro-section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--branco-neutro);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .intro-section h2 {
+            color: var(--verde-quimico);
+            font-size: 28px;
+        }
+        .intro-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--cinza-e);
+        }
+        .intro-section a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--verde-quimico);
+            color: var(--branco-neutro);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .intro-section a:hover {
+            background-color: var(--laranja-sutil);
+            box-shadow: 0 0 15px rgba(230, 126, 34, 0.6); /* Brilho no hover */
+        }
+
+        /* Cards de destaques */
+        .highlights {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        .highlight-card {
+            background-color: var(--branco-neutro);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 30%;
+        }
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .highlight-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .highlight-card h3 {
+            color: var(--azul-cientifico);
+            font-size: 24px;
+        }
+        .highlight-card p {
+            color: var(--cinza-escuro);
+        }
+
+        /* Modo escuro */
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .dark-mode header {
+            background-color: black;
+        }
+        .dark-mode .intro-section {
+            background-color: #444;
+            color: white;
+        }
+        .dark-mode .highlight-card {
+            background-color: #555;
+            color: white;
+        }
+        .dark-mode .highlight-card h3 {
+            color: var(--branco-neutro);
+        }
+        .dark-mode .highlight-card p {
+            color: var(--cinza-claro);
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-flask"></i> Elementos Químicos</a>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre os elementos.html">Sobre</a>
+            <a href="elementos.html">Elementos Químicos</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Buscar...">
+            <button class="mode-icon" onclick="toggleMode()">🌙</button>
+        </div>
+    </header>
+
+    <!-- Seção de Imagem Principal -->
+    <div class="image-container">
+        <img src="img/img inicio.webp" alt="Imagem de Laboratório Químico">
+        <div class="text">Explore o Fascinante Mundo dos Elementos Químicos</div>
+    </div>
+
+    <!-- Seção de Introdução -->
+    <div class="intro-section">
+        <h2>Bem-vindo ao Mundo da Química</h2>
+        <p>A tabela periódica organiza todos os elementos conhecidos do universo. Aqui, você poderá aprender mais sobre as propriedades físicas e químicas de cada elemento, desde os mais comuns, como o Hidrogênio, até os mais raros. Explore a tabela interativa e descubra como os elementos químicos fazem parte do nosso dia a dia.</p>
+        <a href="sobre os elementos.html">Comece sua Exploração</a>
+    </div>
+
+    <!-- Seção de Destaques de Elementos -->
+    <div class="highlights">
+        <div class="highlight-card">
+            <img src="img/hidrogenio.webp" alt="Hidrogênio">
+            <h3>Hidrogênio</h3>
+            <p>O elemento mais abundante no universo, essencial para a vida e usado em processos industriais.</p>
+        </div>
+        <div class="highlight-card">
+            <img src="img/carbono.webp" alt="Carbono">
+            <h3>Carbono</h3>
+            <p>A base de toda vida orgânica, presente em todos os organismos vivos.</p>
+        </div>
+        <div class="highlight-card">
+            <img src="img/atomo oxigenio.png" alt="Oxigênio">
+            <h3>Oxigênio</h3>
+            <p>Vital para a respiração dos seres vivos e um dos componentes mais importantes da água.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const button = document.querySelector('.mode-icon');
+            
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                button.textContent = '☀️';
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                button.textContent = '🌙';
+            }
+        }
+    </script>
+
+</body>
+</html>

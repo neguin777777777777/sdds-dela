@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        /* Cores do header */
+        :root {
+            --azul-cientifico: #2C3E50;
+            --verde-quimico: #1ABC9C;
+            --cinza-claro: #ECF0F1;
+            --branco-neutro: #FFFFFF;
+            --laranja-sutil: #E67E22;
+            --cinza-escuro: #34495E;
+        }
+        /* titulo e explicacao*/
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        img {
+            width: 100%;
+            max-width: 450px;
+            display: block;
+            margin: 0 auto;
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: gray;
+        }
+        .legenda {
+            text-align: center;
+            font-style: normal;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 20px;
+            text-align: justify;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul{
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+        /*header*/
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cinza-claro);
+            color: var(--cinza-escuro);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: var(--azul-cientifico);
+            color: var(--branco-neutro);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .logo i {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: var(--branco-neutro);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: var(--verde-quimico);
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-box {
+            width: 200px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .mode-icon {
+            cursor: pointer;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: var(--branco-neutro);
+            margin-left: 15px;
+        }
+            /* Modo escuro */
+            .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .dark-mode header {
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body class="light-mode"></body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-flask"></i>Voltar para Inicio</a>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre os elementos.html">Sobre</a>
+            <a href="elementos.html">Elementos Químicos</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Buscar...">
+            <button class="mode-icon" onclick="toggleMode()">🌙</button>
+        </div>
+    </header>
+    <h1>Elementos Químicos</h1>
+
+    <img src="/img/breaking bad.webp" alt="Representação abstrata de diversos elementos químicos">
+
+    <div class="caption">
+        Representação abstrata de diversos elementos químicos.
+    </div>
+
+    <p>
+        Os <strong>elementos químicos</strong> são um conjunto de átomos com o mesmo número atômico, ou seja, possuem igual quantidade de prótons no núcleo. Essa característica define um elemento químico, o diferencia dos demais e determina suas propriedades físico-químicas.
+    </p>
+
+    <p>
+        Atualmente, <strong>118 elementos químicos são conhecidos</strong> e estão organizados na <a href="elementos.html">Tabela Periódica</a> em função crescente do seu número atômico, que se reflete em propriedades que se manifestam em intervalos regulares, por isso conhecidas como <strong>propriedades periódicas</strong>.
+    </p>
+
+    <h2>Resumo sobre os Elementos Quimicos</h2>
+    
+    <ul>
+        <li>Os elementos químicos são um grupo de átomos com o mesmo <strong>número atômico</strong>.</li>
+        <li>Número atômico é a quantidade de <strong>prótons</strong> existentes no núcleo.</li>
+        <li>O número atômico determina a identidade de um elemento químico e o diferencia dos demais.</li>
+        <li>As propriedades físico-químicas dos elementos variam de acordo com o número atômico.</li>
+        <li>O átomo é a menor partícula possível que mantém as propriedades de um elemento químico.</li>
+        <li>Atualmente, <strong>118 elementos químicos</strong> são conhecidos.</li>
+        <li>Os elementos químicos são ordenados na <a href="elementos.html">Tabela Periódica</a> em função crescente do número atômico.</li>
+        <li>Algumas propriedades dos elementos se repetem em intervalos regulares na Tabela Periódica e são conhecidas como <strong>propriedades periódicas</strong>.</li>
+    </ul>
+
+    <h2>O que são elementos químicos?</h2>
+
+    <div>
+    <p>Os elementos químicos são <strong>um conjunto de átomos que possuem o mesmo número atômico (Z),</strong>ou seja, igual quantidade de prótons no núcleo, e que, por isso, possuem as mesmas propriedades físico-químicas.</p>
+    </div>
+    <div>
+    <p>O átomo é a menor partícula possível capaz de manter as propriedades que caracterizam um elemento químico.</p>
+    </div>
+    <div>
+    <p>Atualmente, 118 elementos químicos são conhecidos e todos estão representados na Tabela Periódica dos elementos químicos. Do total de elementos conhecidos,<strong> 92 deles são encontrados na natureza e 26 deles foram criados em laboratório</strong> de forma artificial. </p>   
+    </div>
+    <div>
+    <p>Os nomes dos elementos químicos e os símbolos associados possuem diferentes origens. Muitos deles derivam dos respectivos nomes nos idiomas grego e latim. Por exemplo, o elemento chumbo é representado pelo símbolo Pb em razão de seu nome em latim ser plumbum, que significa pesado. Outros elementos foram nomeados em homenagem aos cientistas que o descobriram ou ao local da descoberta. Por exemplo, o elemento Oganosseno, de símbolo Og e número atômico 118, foi adicionado à Tabela Periódica em 2016 e recebeu esse nome em homenagem ao pesquisador que o descobriu, Yuri Oganessian.</p>    
+    </div>
+
+    <h2>Como os elementos químicos são representados?</h2>
+
+    <div>
+    <p>Os elementos químicos <strong>são representados pelo seu símbolo, composto por uma ou duas letras.</strong></p>
+    </div>
+    <div>
+    <p>A Tabela Periódica é uma ferramenta da Química que reúne todos os elementos químicos, organizados em razão do valor do número atômico.</p>
+    </div>
+    <div>
+    <p>Na <a href="elementos.html">Tabela Periódica </a>, cada quadrado é reservado a um elemento químico, apresentando seu símbolo e nome ao centro, o número atômico acima do símbolo e a <strong>massa atômica </strong> abaixo do nome, como mostrado a seguir. Alguns modelos de tabela ainda podem apresentar a <strong> distribuição eletrônica </strong> ou o número de <strong> elétrons </strong> por camada no lado direito superior.</p>
+    </div>
+
+    <img src="img/representacao elementos quimicos sobre.webp" alt="Representação de elementos químicos na Tabela Periódica">
+
+    <div class="caption">
+        Representação de elementos químicos na Tabela Periódica
+    </div>
+
+    <div>
+    <p>Fora da Tabela Periódica, a forma de representação dos elementos químicos é composta pelo símbolo, acompanhado dos valores de número de massa (A) no lado esquerdo superior e de número atômico (Z) no lado esquerdo inferior. Lembrando que o número de massa se refere à soma de prótons e nêutrons. Essa forma de representação é mostrada abaixo:</p>
+    </div>
+
+    <img src="img/representacao-elemento-quimico-exemplo-ferro.webp" alt="Representação de elementos químicos e exemplo para o elemento ferro.">
+
+    <div class="caption">
+        Representação de elementos químicos e exemplo para o elemento ferro.
+    </div>
+
+    <div>
+    <p> <strong>Ao se tratar de íons </strong> ― espécie química com carga, que perdeu ou recebeu elétrons ―, a carga deve ser expressa do lado direito superior</p>
+    </div>
+
+    <img src="img/representacao-elemento-forma-ionica.webp" alt="Representação de elementos químicos na forma iônica e exemplo para o íon ferro.">
+
+    <div class="caption">
+        Representação de elementos químicos na forma iônica e exemplo para o íon ferro.
+    </div>
+    
+    <h2>Quais são as propriedades dos elementos químicos?</h2>
+
+    <div>
+    <p>As propriedades dos elementos químicos <strong> podem ser separadas em propriedades periódicas e aperiódicas. </strong></p>
+    </div>
+
+    <ul>
+        <li><h2>Propriedades periódicas </h2></li>
+    </ul>
+
+    <div>As propriedades periódicas são aquelas que <strong> variam em função do número atômico e se manifestam em intervalos regulares </strong> na Tabela Periódica. São divididas em:</div>
+
+    <ul>
+        <li>raio atômico;</li>
+        <li>volume atômico;</li>
+        <li>energia de ionização;</li>
+        <li>eletronegatividade;</li>
+        <li>eletropositividade;</li>
+        <li>afinidade eletrônica;</li>
+        <li>densidade;</li>
+        <li>pontos de fusão e ebulição.</li>
+    </ul>
+
+    <ul>
+        <li><h2>Propriedades aperiódicas </h2></li>
+    </ul>
+
+    <div>
+    <p>As propriedades aperiódicas aumentam ou diminuem de acordo com o número atômico, mas <strong> não respeitam uma frequência periódica de repetição. </strong> </p> 
+    </div>
+
+    <div>
+    <p>Por exemplo, a massa atômica é uma propriedade aperiódica, pois aumenta de acordo com a elevação do número atômico. O <strong> calor específico </strong> varia no sentido oposto ao número atômico, diminuindo seu valor ao aumentar o valor de Z.</p>
+    </div>
+
+    <h2>Classificação periódica dos elementos químicos</h2>
+
+    <div>
+    <p>As propriedades periódicas dos elementos químicos podem ser organizadas em um sistema de ordenação conhecido como <a href="elementos.html">Tabela Periódica </a>, que é uma importante ferramenta na <strong> Química. </strong></p>
+    </div>
+
+    <div>
+    <p><a href="elementos.html">Veja a Tabela Periódica!</a></p>
+    </div>
+
+    <div>
+    <p><strong>Na Tabela Periódica, os elementos químicos são ordenados em ordem crescente de número atômico</strong>,sendo divididos em sete linhas horizontais, chamadas de períodos, e 18 colunas verticais, chamadas de grupos.</p>
+    </div>
+
+    <div>
+    <p>
+     Os períodos reúnem elementos que possuem o mesmo número de camadas eletrônicas preenchidas. Os grupos reúnem um conjunto de elementos com propriedades físico-químicas similares.
+    </p>
+    </div>
+
+    <div>
+    <p><strong></strong> As propriedades periódicas dos elementos químicos possuem tendência de variação conhecida </strong> dentro da Tabela Periódica, de acordo com o número atômico dos elementos. Por exemplo, a propriedade de raio atômico e eletropositividade aumenta da direita para a esquerda dentro de um período e de cima para baixo em um mesmo grupo.</p>
+    </div>
+
+    <img src="img/raio-atomico-eletropositividade-tabela-periodica.webp" alt="Sentido de variação das propriedades periódicas raio atômico e eletropositividade.">
+    
+    <div class="caption">
+        Sentido de variação das propriedades periódicas raio atômico e eletropositividade.
+    </div>
+
+    <div>
+    <p>Já as propriedades de energia de ionização, eletronegatividade e afinidade eletrônica aumentam da esquerda para a direita em um período e de baixo para cima ao longo de um grupo.</p>
+    </div>
+
+    <img src="img/sentido-variacao-propriedades-periodicas.webp" alt="Sentido de variação das propriedades periódicas afinidade eletrônica, eletronegatividade e energia de ionização.">
+
+    <div class="caption">
+        Sentido de variação das propriedades periódicas afinidade eletrônica, eletronegatividade e energia de ionização.
+    </div>
+
+    <h2> Ainda não acabei careca gay</h2>
+
+
+
+
+
+    <script>
+    function toggleMode() {
+        const body = document.body;
+        const button = document.querySelector('.mode-icon');
+        
+        if (body.classList.contains('light-mode')) {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            button.textContent = '☀️';
+        } else {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            button.textContent = '🌙';
+        }
+    }
+    </script>
+    <div class="betternet-wrapper"></div>
+<body/>
+</html>
